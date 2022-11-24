@@ -1,0 +1,26 @@
+#!/bin/bash
+#please launch script in main app directory
+
+
+function status(){
+
+[[ $? -eq 0 ]] && echo 'clean now...'
+}
+
+function clean_dependencies(){
+if [[ -d "./node_modules/" ]]; then	
+	rm -r ./node_modules/
+else
+	echo "node_modules are missing, please use 'npm install'"
+fi
+
+if [[ -f "./package-lock.json" ]]; then
+	rm ./package-lock.json
+else
+	echo "dependencies not yet installed, pleass use 'npm install'"
+
+fi
+
+}
+
+clean_dependencies

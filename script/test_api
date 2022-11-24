@@ -1,0 +1,16 @@
+#!/bin/bash
+#please launch script in main app directory
+
+
+function run_mocha_tests(){
+	./node_modules/.bin/mocha ./src/test/test.js
+	[[ $? -eq 0 ]] && echo 'success'
+}
+
+
+if [[ -f "./node_modules/.bin/mocha" ]]; then
+       run_mocha_tests 
+else
+      echo "mocha not found, missing dependency"
+      exit 127
+fi

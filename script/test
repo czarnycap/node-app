@@ -1,3 +1,0 @@
-#!/bin/sh
-#please launch script in main app directory
-./node_modules/.bin/mocha ./src/test/test.js
