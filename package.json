@@ -3,6 +3,9 @@
     "description": "hello jenkins test app",
     "version": "0.0.1",
     "private": true,
+    "publishConfig":{
+      "registry": "http://xubuntu1:8081/repository/npm-private/"
+    },
     "dependencies": {
        "express": "3.12.0"
     },
