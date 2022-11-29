@@ -1,7 +1,7 @@
 {
     "name": "node-app",
     "description": "hello jenkins test app",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "private": false,
     "publishConfig":{
       "registry": "http://xubuntu1:8081/repository/npm-private/"
